@@ -4,7 +4,7 @@
 
 ![Preview do Projeto](./Screenshot.png)
 
-Você pode visualizar o layout do projeto através [deste link](...).
+Você pode visualizar o layout do projeto através [deste link](https://cjzinn.github.io/keygen-grove/).
 
 ## 💻 Sobre o Projeto
 
@@ -33,7 +33,7 @@ O diferencial deste projeto é a **Gamificação da Interface (UI)** baseada nas
 
 1. **Clone o repositório:**
    ```bash
-   git clone ...
+   git clone https://github.com/Cjzinn/keygen-grove.git
 
 ## 🧠 Destaque do Código
 
