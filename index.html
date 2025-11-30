@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grove KeyGen - Secure Passwords</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>GROVE <span class="green-text">KEYGEN</span></h1>
+            <p>Gerador de Acesso Seguro</p>
+        </header>
+
+        <div class="display-container">
+            <input type="text" id="password-display" placeholder="P4$$W0RD" readonly>
+            <button id="copy-btn" title="Copiar Senha">
+                📄
+            </button>
+        </div>
+
+        <div class="strength-meter">
+            <div class="strength-bar" id="strength-bar"></div>
+            <span id="strength-text">Nível: Nenhum</span>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label>Tamanho: <span id="length-value" class="green-text">16</span></label>
+                <input type="range" id="length-slider" min="4" max="32" value="16">
+            </div>
+
+            <div class="settings-grid">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="include-uppercase" checked>
+                    <span class="checkmark"></span>
+                    Maiúsculas (A-Z)
+                </label>
+
+                <label class="checkbox-container">
+                    <input type="checkbox" id="include-numbers" checked>
+                    <span class="checkmark"></span>
+                    Números (0-9)
+                </label>
+
+                <label class="checkbox-container">
+                    <input type="checkbox" id="include-symbols">
+                    <span class="checkmark"></span>
+                    Símbolos (!@#)
+                </label>
+            </div>
+        </div>
+
+        <button id="generate-btn">GERAR CÓDIGO</button>
+        
+        <div class="separator"></div>
+
+        <div class="tester-section">
+            <h3>Testar Senha Existente</h3>
+            <input type="text" id="custom-password-input" placeholder="Digite uma senha para checar...">
+            <div id="test-result">Aguardando digitação...</div>
+        </div>
+
+        <div id="toast">Senha Copiada!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
